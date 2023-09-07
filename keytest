@@ -1,0 +1,24 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+--- Window
+
+local Window = OrionLib:MakeWindow({Name = "Harlen Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroEnabled = "yes", IntroText = "Harlen Hub", IntroIcon = "https://i.im.ge/2023/09/07/wkPJKM.CBCF4F42-18F9-4ED9-92F5-A0C22C892770.png"})
+
+--- Tab
+
+local Tab = Window:MakeTab({
+	Name = "🌐┃Language",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--- meu Botao
+
+Tab:AddBind({
+	Name = "Bind",
+	Default = harlen,
+	Hold = false,
+	Callback = function()
+		print("press")
+	end    
+})
